@@ -1,0 +1,72 @@
+.haut{
+    display: flex;
+    height: 28vh;
+    background-image: url("img/New_York_City_at_night_HDR.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+ .body{
+    font-family: 'Noto Sans Mono', monospace;
+ }
+.header{
+margin-left: 16rem;
+}
+
+.header img{
+    width: 16vw;
+    height: 28vh;
+    background-size: contain;
+}
+
+.right{
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.right img{
+    height: 17vh;
+    background-size: contain;
+    margin-left: 8rem;
+}
+
+.navbar {
+    justify-content: space-between;
+    background-image: url("img/pngtree-digital-home-appliance-promotion-main-map-image_128372.jpg");
+    color: white;
+}
+
+.nav-item{
+margin-left: 3rem;
+color: white;
+}
+
+.search{
+    margin-right: 8rem;
+}
+
+.head {
+    height: 10rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.head img{
+    width: 9rem;
+}
+
+.titre{
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Rampart One', cursive;
+}
+
+.bas{
+    color: gray;
+}
+
+.miniature{
+width: 4vw;
+}
+
