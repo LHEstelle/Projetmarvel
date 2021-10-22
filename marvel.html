@@ -19,317 +19,555 @@
     <title>Héros Marvel</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
-    <div class="haut m-0 p-0">
+    <div class="haut img-fluid m-0 p-0 row">
 
-        <div class="head">
-            <img src="img/Marvel_Logo.svg.png">
+        <div class="col-2">
+            <img class="head mt-3 ms-3" src="img/Marvel_Logo.svg.png">
         </div>
 
-        <div class="header">
-            <img src="img/5853bc61ec0c270fc2f62de5.png">
+        <div class="col-3 p-0 text-end">
+            <img class="header" src="img/5853bc61ec0c270fc2f62de5.png">
         </div>
 
-        <h1 class="titre fw-bold">
+        <h1 class="titre p-0 fw-bold col-3">
             MARVEL HEROS
         </h1>
 
-        <div class="right">
-            <img src="img/580b57fbd9996e24bc43c052.png">
+        <div class="col-3 text-end">
+            <img class="right" src="img/580b57fbd9996e24bc43c052.png">
         </div>
     </div>
 
 
-    <nav class="navbar navbar-expand-lg text-white text-center sticky-top">
+    <nav class="navbar navbar-expand text-white text-center sticky-top">
         <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white ms-5" href="#">Accueil</a>
-                </li>
-            </ul>
+            <a class="d-none d-lg-block nav-link text-white ms-5" href="#">Accueil</a>
+            <a class="d-lg-none d-md-block nav-link text-white" href="#">Accueil</a>
         </div>
-        <div class="search">
-            <form class="d-flex">
-                <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-            </form>
-            </class>
-            </ul>
-    </nav>
-
-
-
-
-
-    </div>
-    </div>
-
+        <div class="d-none d-lg-block search me-5">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="d-lg-none d-md-block search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </div>
     </nav>
 
     <div class="container2 pt-5 ps-5 pe-5">
         <div class="row">
-            <div class="col-lg-3 border border-dark bg-dark text-white">
+            <div class="card col-lg-3 border border-white bg-dark text-white pt-3 d-none d-lg-block m-auto mt-0">
                 <h2 class="text-center">IRONMAN</h2>
                 <img src="img/ironman.jpg" alt="photo portrait" class="img-fluid">
-                <p class="text-center fs-4">Piromane</h2>
+                <p class="text-center fs-4">Piromane</p>
                 <div class="pied row">
-                    <p class="bas text-center col fs-6 fw-lighter">Pie Romane</h2>
-                    <p class="bas text-center col fs-6 fw-lighter">Cracheur de feu</h2>
+                    <p class="bas text-center col fs-6 fw-lighter">Pie Romane</p>
+                    <p class="bas text-center col fs-6 fw-lighter">Cracheur de feu</p>
                 </div>
             </div>
 
-            <div class="col-9">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr>
+                <div class="col-lg-9">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
 
-                            <th scope="col">Picture</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Power</th>
-                            <th scope="col">Plus d'infos</th>
+                                <th scope="col">Picture</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Power</th>
+                                <th scope="col">Plus d'infos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="alignMiddle">
+                                <td>
+                                    <img src="img/spiderman.jpg" type="button" class="miniature img-fluid" data-bs-toggle="modal" data-bs-target="#lienspiderman">
+                                </td>
+                                <td>Spiderman</td>
+                                <td>Projection d'araignées</td>
+                                <td>
+                                    <button type="button" class="btn btn-dark border border-white"
+                                        data-bs-toggle="modal" data-bs-target="#lienspiderman">+d'infos</button>
+
+
+                                    <div class="modal fade" id="lienspiderman" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bg-dark">
+                                                <div class="modal-header ">
+                                                    <h1 class="modal-title h5 col text-center fs-1"
+                                                        id="exampleModalLabel">
+                                                        SPIDERMAN</h1>
+                                                    <button type="button" class="btn-close bg-white"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center bg-dark text-dark">
+                                                    <img src="img/spiderman.jpg" class="img-fluid">
+                                                    <div class="texte">
+                                                        <p class="text-white" id="exampleModalLabel">LANCEUR DE TOILES
+                                                        </p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Fabien</p>
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Photographe</p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer2">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">X Fermer</button>
+                                                </div>
+
+
+                                                <!--HULK-->
+                            <tr class="alignMiddle">
+                                <td>
+                                    <img src="img/hulk.jpg" type="button" class="miniature img-fluid" data-bs-toggle="modal" data-bs-target="#lienhulk">
+                                </td>
+                                <td>Hulk</td>
+                                <td>Homme fort</td>
+                                <td>
+                                    <button type="button" class="btn btn-dark border border-white mt-2"
+                                        data-bs-toggle="modal" data-bs-target="#lienhulk">+d'infos</button>
+                                </td>
+
+
+                                <div class="modal fade" id="lienhulk" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header ">
+                                                <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">
+                                                    HULK</h1>
+                                                <button type="button" class="btn-close bg-white"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body text-center bg-dark text-dark">
+                                                <img src="img/hulk.jpg" class="img-fluid">
+                                                <div class="texte">
+                                                    <p class="text-white" id="exampleModalLabel">HOMME FORT</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="bas text-center col fs-6 fw-lighter"
+                                                        id="exampleModalLabel">Johan
+                                                    </p>
+                                                    <p class="bas text-center col fs-6 fw-lighter"
+                                                        id="exampleModalLabel">
+                                                        Opérateur</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer2">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">X
+                                                    Fermer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </td>
+                            </tr>
+                            </tr>
+
+                            <!--GROOT-->
+                            <tr class="alignMiddle">
+                                <td>
+                                    <img src="img/groot.jpg" class="miniature img-fluid">
+                                </td>
+                                <td>Groot</td>
+                                <td>Contrôle la nature</td>
+                                <td>
+                                    <button type="button" class="btn btn-dark border border-white"
+                                        data-bs-toggle="modal" data-bs-target="#liengroot">+d'infos</button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="liengroot" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header ">
+                            <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">GROOT
+                            </h1>
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-center bg-dark text-dark">
+                            <img src="img/groot.jpg" class="img-fluid">
+                            <div class="texte">
+                                <p class="text-white" id="exampleModalLabel">CONTROLE LA NATURE</p>
+                            </div>
+                            <div class="row">
+                                <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                    Clément</p>
+                                <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                    Arboriste-grimpeur
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                Fermer</button>
+                        </div>
+                        </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+
+                        <!--THOR-->
+
+                        <tr class="alignMiddle">
                             <td>
-                                <img src="img/spiderman.jpg" class="miniature img-fluid">
+                                <img src="img/thor.jpg" class="miniature img-fluid">
                             </td>
-                            <td class="mt-4">Spiderman</td>
-                            <td>Projection d'araignées</td>
+                            <td>Thor</td>
+                            <td>Déclenche l'orage</td>
                             <td>
                                 <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                                    data-bs-target="#lienspiderman">+
-                                    d'infos</button>
-            </div>
-        </div>
-
-        <div class="modal fade" id="lienspiderman" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header ">
-                        <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">SPIDERMAN</h1>
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                                    data-bs-target="#lienthor">+d'infos</button>
                     </div>
-                    <div class="modal-body text-center bg-dark text-dark">
-                        <img src="img/spiderman.jpg" class="img-fluid">
-                        <div class="texte">
-                            <p class="text-white" id="exampleModalLabel">LANCEUR DE TOILES</p>
+                </div>
+
+                <div class="modal fade" id="lienthor" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">
+                                    THOR</h1>
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center bg-dark text-dark">
+                                <img src="img/thor.jpg" class="img-fluid">
+                                <div class="texte">
+                                    <p class="text-white" id="exampleModalLabel">DECLENCHE L'ORAGE</p>
+                                </div>
+                                <div class="row">
+                                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Armand</p>
+                                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">DJ</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer2">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                    Fermer</button>
+                            </div>
+                            </td>
+                            </tr>
+
+
+                            <!--BLACKPANTHER-->
+
+                            <tr class="alignMiddle">
+                                <td>
+                                    <img src="img/black_panther.jpg" class="miniature img-fluid">
+                                </td>
+                                <td class=>Black Panther</td>
+                                <td class=>Plus rapide que l'éclair</td>
+                                <td>
+                                    <button type="button" class="btn btn-dark border border-white"
+                                        data-bs-toggle="modal" data-bs-target="#lienblackpanther">+d'infos</button>
                         </div>
-                        <div class="row">
-                            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Fabien</p>
-                            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Photographe</p>
+                    </div>
+
+                    <div class="modal fade" id="lienblackpanther" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">BLACK PANTHER
+                                    </h1>
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body text-center bg-dark text-dark">
+                                    <img src="img/black_panther.jpg" class="img-fluid">
+                                    <div class="texte">
+                                        <p class="text-white" id="exampleModalLabel">PLUS RAPIDE QUE
+                                            L'ECLAIR</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Usain Bolt
+                                        </p>
+                                        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Sprinteur
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer2">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                        Fermer</button>
+                                </div>
+                                </td>
+                                </tr>
+
+                                <!--CAPTAINMARVEL-->
+
+                                <tr class="alignMiddle">
+                                    <td>
+                                        <img src="img/captain_marvel.jpg" class="miniature img-fluid">
+                                    </td>
+                                    <td>Captain Marvel</td>
+                                    <td>Lis dans les pensées</td>
+                                    <td>
+                                        <button type="button" class="btn btn-dark border border-white"
+                                            data-bs-toggle="modal" data-bs-target="#liencaptainmarvel">+d'infos</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer2">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-                    </div>
-                    </td>
-                    </tr>
-                    
 
-<!--HULK-->
-                    <tr>
-                        <td>
-                            <img src="img/hulk.jpg" class="miniature img-fluid">
-                        </td>
-                        <td class="mt-4">Hulk</td>
-                        <td>Homme fort</td>
-                        <td>
-                            <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                                data-bs-target="#lienhulk">+
-                                d'infos</button>
-        </div>
-    </div>
+                        <div class="modal fade" id="liencaptainmarvel" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">CAPTAIN
+                                            MARVEL</h1>
+                                        <button type="button" class="btn-close bg-white"
+                                            data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body text-center bg-dark text-dark">
+                                        <img src="img/captain_marvel.jpg" class="img-fluid">
+                                        <div class="texte">
+                                            <p class="text-white" id="exampleModalLabel">LIS DANS LES
+                                                PENSEES</p>
+                                        </div>
+                                        <div class="row">
+                                            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                                Jacqueline</p>
+                                            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                                Médecin</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer2">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                            Fermer</button>
+                                    </div>
+                                    </td>
+                                    </tr>
 
-    <div class="modal fade" id="lienhulk" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-                <div class="modal-header ">
-                    <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">HULK</h1>
-                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body text-center bg-dark text-dark">
-                    <img src="img/hulk.jpg" class="img-fluid">
-                    <div class="texte">
-                        <p class="text-white" id="exampleModalLabel">HOMME FORT</p>
-                    </div>
-                    <div class="row">
-                        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Johan</p>
-                        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Opérateur</p>
-                    </div>
-                </div>
-                <div class="modal-footer2">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-                </div>
-                </td>
-                </tr>
+                                    <!--GOOSE-->
 
-                <!--GROOT-->
-                <tr>
-                    <td>
-                        <img src="img/groot.jpg" class="miniature img-fluid">
-                    </td>
-                    <td class="mt-4">Groot</td>
-                    <td>Contrôle la nature</td>
-                    <td>
-                        <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                            data-bs-target="#liengroot">+
-                            d'infos</button>
-    </div>
-</div>
+                                    <tr class="alignMiddle">
+                                        <td>
+                                            <img src="img/goose.jpg" class="miniature img-fluid">
+                                        </td>
+                                        <td>Goose</td>
+                                        <td>Combattant</td>
+                                        <td>
+                                            <button type="button" class="btn btn-dark border border-white"
+                                                data-bs-toggle="modal" data-bs-target="#liengoose">+d'infos</button>
+                                </div>
+                            </div>
 
-<div class="modal fade" id="liengroot" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content bg-dark">
-            <div class="modal-header ">
-                <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">GROOT</h1>
-                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body text-center bg-dark text-dark">
-                <img src="img/groot.jpg" class="img-fluid">
-                <div class="texte">
-                    <p class="text-white" id="exampleModalLabel">CONTROLE LA NATURE</p>
-                </div>
-                <div class="row">
-                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Clément</p>
-                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Arboriste-grimpeur</p>
-                </div>
-            </div>
-            <div class="modal-footer2">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-            </div>
-            </td>
-            </tr>
+                            <div class="modal fade" id="liengoose" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">GOOSE
+                                            </h1>
+                                            <button type="button" class="btn-close bg-white"
+                                                data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body text-center bg-dark text-dark">
+                                            <img src="img/goose.jpg" class="img-fluid">
+                                            <div class="texte">
+                                                <p class="text-white" id="exampleModalLabel">COMBATTANT
+                                                </p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                                    Chat Potté</p>
+                                                <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">
+                                                    Secrétaire</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer2">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X
+                                                Fermer</button>
+                                        </div>
+                                        </td>
+                                        </tr>
 
-            <!--THOR-->
+                                        <!--ROCKET-->
 
-            <tr>
-                    <td>
-                        <img src="img/thor.jpg" class="miniature img-fluid">
-                    </td>
-                    <td class="mt-4">Thor</td>
-                    <td>Déclenche l'orage</td>
-                    <td>
-                        <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                            data-bs-target="#lienthor">+
-                            d'infos</button>
-    </div>
-</div>
+                                        <tr class="alignMiddle">
+                                            <td>
+                                                <img src="img/rocket.jpg" class="miniature img-fluid">
+                                            </td>
+                                            <td>Rocket</td>
+                                            <td>Tireur d'élite</td>
+                                            <td>
+                                                <button type="button" class="btn btn-dark border border-white"
+                                                    data-bs-toggle="modal" data-bs-target="#lienrocket">+d'infos</button>
+                                    </div>
+                                </div>
 
-<div class="modal fade" id="lienthor" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content bg-dark">
-            <div class="modal-header">
-                <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">THOR</h1>
-                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body text-center bg-dark text-dark">
-                <img src="img/thor.jpg" class="img-fluid">
-                <div class="texte">
-                    <p class="text-white" id="exampleModalLabel">DECLENCHE L'ORAGE</p>
-                </div>
-                <div class="row">
-                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Armand</p>
-                    <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">DJ</p>
-                </div>
-            </div>
-            <div class="modal-footer2">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-            </div>
-            </td>
-            </tr>
+                                <div class="modal fade" id="lienrocket" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content bg-dark">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">
+                                                    ROCKET</h1>
+                                                <button type="button" class="btn-close bg-white"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body text-center bg-dark text-dark">
+                                                <img src="img/rocket.jpg" class="img-fluid">
+                                                <div class="texte">
+                                                    <p class="text-white" id="exampleModalLabel">TIREUR
+                                                        D'ELITE</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p class="bas text-center col fs-6 fw-lighter"
+                                                        id="exampleModalLabel">François</p>
+                                                    <p class="bas text-center col fs-6 fw-lighter"
+                                                        id="exampleModalLabel">Archéologue</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer2">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">X Fermer</button>
+                                            </div>
+                                            </td>
+                                            </tr>
+
+                                            <!--SHURI-->
+
+                                            <tr class="alignMiddle">
+                                                <td>
+                                                    <img src="img/shuri.jpg" class="miniature img-fluid">
+                                                </td>
+                                                <td>Shuri</td>
+                                                <td>Immortelle</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-dark border border-white"
+                                                        data-bs-toggle="modal" data-bs-target="#lienshuri">+d'infos</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="lienshuri" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bg-dark">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title h5 col text-center fs-1"
+                                                        id="exampleModalLabel">SHURI</h1>
+                                                    <button type="button" class="btn-close bg-white"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center bg-dark text-dark">
+                                                    <img src="img/shuri.jpg" class="img-fluid">
+                                                    <div class="texte">
+                                                        <p class="text-white" id="exampleModalLabel">
+                                                            IMMORTELLE</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Cassandre</p>
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Commerciale</p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer2">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">X Fermer</button>
+                                                </div>
+                                            </div>
+                                            </td>
+                                            </tr>
+
+                                            <!--PROXIMA MIDNIGHT-->
+
+                                            <tr class="alignMiddle">
+                                                <td>
+                                                    <img src="img/proxima_midnight.jpg" class="miniature img-fluid">
+                                                </td>
+                                                <td>Proxima Midnight</td>
+                                                <td>Sorcière</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-dark border border-white"
+                                                        data-bs-toggle="modal" data-bs-target="#lienproxima">+d'infos</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="lienproxima" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bg-dark">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title h5 col text-center fs-1"
+                                                        id="exampleModalLabel">PROXIMA MIDNIGHT</h1>
+                                                    <button type="button" class="btn-close bg-white"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center bg-dark text-dark">
+                                                    <img src="img/proxima_midnight.jpg" class="img-fluid">
+                                                    <div class="texte">
+                                                        <p class="text-white" id="exampleModalLabel">SORCIERE</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Morgane</p>
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Maîtresse d'école
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer2">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">X Fermer</button>
+                                                </div>
+                                                </td>
+                                                </tr>
+
+                                                <!--IRON MAN-->
+
+                                            <tr class=" AlignMiddle d-lg-none d-md-table-row">
+                                                <td>
+                                                    <img src="img/ironman.jpg" class="miniature img-fluid">
+                                                </td>
+                                                <td>Iron man</td>
+                                                <td>Piromane</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-dark border border-white"
+                                                        data-bs-toggle="modal" data-bs-target="#lieniron">+d'infos</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade" id="lieniron" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bg-dark">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title h5 col text-center fs-1"
+                                                        id="exampleModalLabel">IRON MAN</h1>
+                                                    <button type="button" class="btn-close bg-white"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body text-center bg-dark text-dark">
+                                                    <img src="img/ironman.jpg" class="img-fluid">
+                                                    <div class="texte">
+                                                        <p class="text-white" id="exampleModalLabel">PIROMANE</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Pie Romane</p>
+                                                        <p class="bas text-center col fs-6 fw-lighter"
+                                                            id="exampleModalLabel">Cracheur de feu
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer2">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">X Fermer</button>
+                                                </div>
+                                                </td>
+                                                </tr>
 
 
-        <!--BLACKPANTHER-->
+                                                </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <tr>
-            <td>
-                <img src="img/black_panther.jpg" class="miniature img-fluid">
-            </td>
-            <td class="mt-4">Black Panther</td>
-            <td>Plus rapide que l'éclair</td>
-            <td>
-                <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                    data-bs-target="#lienblackpanther">+
-                    d'infos</button>
-</div>
-</div>
-
-<div class="modal fade" id="lienblackpanther" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content bg-dark">
-    <div class="modal-header">
-        <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">BLACK PANTHER</h1>
-        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
-    </div>
-    <div class="modal-body text-center bg-dark text-dark">
-        <img src="img/black_panther.jpg" class="img-fluid">
-        <div class="texte">
-            <p class="text-white" id="exampleModalLabel">PLUS RAPIDE QUE L'ECLAIR</p>
-        </div>
-        <div class="row">
-            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Usain Bolt</p>
-            <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Sprinteur</p>
-        </div>
-    </div>
-    <div class="modal-footer2">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-    </div>
-    </td>
-    </tr>
-
-    <!--CAPTAINMARVEL-->
-
-    <tr>
-        <td>
-            <img src="img/captain_marvel.jpg" class="miniature img-fluid">
-        </td>
-        <td class="mt-4">Captain Marvel</td>
-        <td></td>
-        <td>
-            <button type="button" class="btn btn-dark border border-white" data-bs-toggle="modal"
-                data-bs-target="#lienblackpanther">+
-                d'infos</button>
-</div>
-</div>
-
-<div class="modal fade" id="lienblackpanther" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content bg-dark">
-<div class="modal-header">
-    <h1 class="modal-title h5 col text-center fs-1" id="exampleModalLabel">BLACK PANTHER</h1>
-    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
-</div>
-<div class="modal-body text-center bg-dark text-dark">
-    <img src="img/black_panther.jpg" class="img-fluid">
-    <div class="texte">
-        <p class="text-white" id="exampleModalLabel">PLUS RAPIDE QUE L'ECLAIR</p>
-    </div>
-    <div class="row">
-        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Usain Bolt</p>
-        <p class="bas text-center col fs-6 fw-lighter" id="exampleModalLabel">Sprinteur</p>
-    </div>
-</div>
-<div class="modal-footer2">
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X Fermer</button>
-</div>
-</td>
-</tr>
-
-            </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+                            <div class="row bg-secondary m-0 pt-3 pb-3">
+                                <p class="text-center text-white">Mentions légales</p>
+                            </div>
 
 
 
 
 
-        <!--ICI SCRIPT BOOTSTRAP-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+                            <!--ICI SCRIPT BOOTSTRAP-->
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                                crossorigin="anonymous"></script>
 </body>
 
 </html>

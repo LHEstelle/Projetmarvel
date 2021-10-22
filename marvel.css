@@ -1,6 +1,6 @@
 .haut{
-    display: flex;
-    height: 28vh;
+    /* display: flex;
+    height: 28vh; */
     background-image: url("img/New_York_City_at_night_HDR.jpg");
     background-repeat: no-repeat;
     background-color: black;
@@ -10,17 +10,17 @@
  .body{
     font-family: 'Noto Sans Mono', monospace;
  }
-.header{
-margin-left: 16rem;
+/* .header{
+margin-left: 10rem;
 }
 
 .header img{
     width: 16vw;
     height: 28vh;
     background-size: contain;
-}
+} */
 
-.right{
+/* .right{
     margin-left: 10rem;
     margin-top: 2rem;
 }
@@ -29,7 +29,7 @@ margin-left: 16rem;
     height: 17vh;
     background-size: contain;
     margin-left: 8rem;
-}
+} */
 
 .navbar {
     justify-content: space-between;
@@ -37,36 +37,49 @@ margin-left: 16rem;
     color: white;
 }
 
-.nav-item{
-margin-left: 3rem;
-color: white;
-}
-
-.search{
-    margin-right: 8rem;
-}
-
 .head {
+    width: 50%;
+    height: auto;
+}
+
+.header {
+    width: 40%;
+    height: auto;
+}
+/* .head {
     height: 10rem;
+    width: 100%;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
 .head img{
     width: 9rem;
-}
+}*/
 
 .titre{
+    font-size: 4vw;
     color: white;
-    margin-top: 1rem;
     font-family: 'Rampart One', cursive;
+}
+
+.right {
+    width: 60%;
+    height: auto;
 }
 
 .bas{
     color: gray;
 }
 
+.card{
+    margin-bottom: 2rem;
+}
+
 .miniature{
 width: 4vw;
 }
 
+.alignMiddle {
+    vertical-align: middle;
+}
